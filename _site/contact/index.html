@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gerard Nijssen</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/gn_empty.png" sizes="180x180" type="image/png">
+    <script src=
+    'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+    </script>
+    <style type="text/css">
+    a.close:hover::after {
+      content: ' x';
+    }
+    </style>
+</head>
+
+<body class="site animated fadeIn">
+<div class="arrow_left hide"><a href="#"><img src="img/gn_arrow_left.png" height="24px" width="40px" border="0" /></a></div>
+<div class="arrow_right hide"><a href="#"><img src="img/gn_arrow_right.png" height="24px" width="40px" border="0" /></a></div>
+<section class="container">
+</section>
+
+<!-- nav -->
+<nav class="nav ">
+	<div class="title"><a href="index.html">Gerard Nijssen</a></div>
+	<div class="menu"><a href="menu.html">menu</a></div>
+</nav>
+
+
+<!-- content -->
+<div class="content">
+
+	<div class="text playfair no-font-feature">
+    info@gerardnijssen.nl<br/>
+    31612345678
+  </div>
+
+</div>
+
+<!-- footer -->
+
+<script>
+$(document).ready(function(){
+    $(".arrow_left").hover(
+	    function() {
+		    $(this).animate(
+			    {marginLeft:'-4px'}, 'fast')
+	    }
+    )
+    $(".arrow_left").mouseleave(
+	    function() {
+		    $(this).animate(
+			    {marginLeft:'0px'}, 'fast')
+	    }
+    )
+    $(".arrow_right").hover(
+	    function() {
+		    $(this).animate(
+			    {marginRight:'-4px'}, 'fast')
+	    }
+    )
+    $(".arrow_right").mouseleave(
+	    function() {
+		    $(this).animate(
+			    {marginRight:'0px'}, 'fast')
+	    }
+    )
+});
+</script>
+
+
+
+</body>
+</html>
