@@ -1,0 +1,14 @@
+<html>
+{% include header.html %}
+<body class="site animated fadeIn">
+{% include arrows.html %}
+<!-- nav -->
+{% include nav.html %}
+<!-- content -->
+{{content}}
+<!-- footer -->
+</section>
+{% include scripts.html %}
+{% if page.url == 'bio.html' and page.url == 'work.html' and page.url == 'contact.html' %}{% include footer.html %}{% endif %}
+</body>
+</html>

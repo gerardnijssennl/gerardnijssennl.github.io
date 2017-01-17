@@ -1,0 +1,4 @@
+<nav class="nav {% if page.url == '/' %}animated slideInDown{% endif %}">
+	<div class="title"><a href="index.html">{% if page.url == '/' %}Image Researcher{% else %}{{site.title}}{% endif %}</a></div>
+	<div class="menu"><a href="menu.html">{% if page.url == '/menu.html' %} <a onclick="goBack()" class="close">close</a>{% else %}menu{% endif %}</a></div>
+</nav> {% if page.previous.url %}
