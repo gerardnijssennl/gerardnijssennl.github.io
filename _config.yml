@@ -23,8 +23,8 @@ facebook_username:
 copyright: Amsterdam, Netherlands
 imdb_url: http://www.imdb.com/name/nm3063512/
 telephone_number: +31612345678
-homepage_image: 'img/gn_placeholder.png'
-favicon_image: 'img/gn_empty.png'
+homepage_image: '/img/gn_placeholder.png'
+favicon_image: '/img/gn_empty.png'
 excerpt_separator: ""
 year: 2017
 paginate: 1
