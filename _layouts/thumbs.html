@@ -4,7 +4,7 @@ layout: default
 <div class="content">
 
 <div class="work thumbs">
-{% for posts in paginator.posts %}
+
  {% for work in site.work reversed %}
   <article class="thumb thumbview article_thumbs" style="padding:1vw;">
           <a href="{{work.url}}">
@@ -15,7 +15,7 @@ layout: default
           <div class="playfair sub">{{work.title}}</div></a>
     </article>
 {% endfor %}
-{% endfor %}
+
 </div>
 
 </div>
