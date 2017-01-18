@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <title>Gerard Nijssen</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
     <link rel="icon" href="img/gn_empty.png" sizes="180x180" type="image/png">
@@ -15,25 +15,22 @@
     a.close:hover::after {
       content: ' x';
     }
+    a.homepage:hover::after {
+      content: ' ..';
+    }
     </style>
 </head>
 
 <body class="site animated fadeIn">
-<div class="arrow_left hide"><a href="#"><img src="img/gn_arrow_left.png" height="24px" width="40px" border="0" /></a></div>
-<div class="arrow_right hide"><a href="#"><img src="img/gn_arrow_right.png" height="24px" width="40px" border="0" /></a></div>
-<section class="container">
-</section>
+  
 
 <!-- nav -->
 <nav class="nav ">
-	<div class="title"><a href="index.html">Gerard Nijssen</a></div>
-	<div class="menu"><a href="menu.html">menu</a></div>
+	<div class="title"><a href="../">Gerard Nijssen</a></div>
+	<div class="menu"><a href="/menu/" class="homepage">menu</a></div>
 </nav>
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
+<section class="container wrap">
 <!-- content -->
 <div class="content">
 
@@ -44,11 +41,13 @@
 
 </div>
 
-<<<<<<< Updated upstream
-<!-- footer -->
+</section>
 
-=======
->>>>>>> Stashed changes
+<footer class="footer" style="background-color:transparent;"><h6 class="playfair center" style="margin-top:15px;">Amsterdam, Netherlands<br/>
+<a href="#" style="border-bottom:0px;">info@gerardnijssen.nl</a></h6></footer>
+
+
+
 <script>
 $(document).ready(function(){
     $(".arrow_left").hover(
@@ -77,12 +76,16 @@ $(document).ready(function(){
     )
 });
 </script>
+<script>
+$('.thumbview').mouseenter( function () {
+  $(this).addClass('fadeO').removeClass('fade');
+} ).mouseleave( function () {
+  $(this).addClass('fade').removeClass('fadeO');
+} );
+</script>
 
-<<<<<<< Updated upstream
-
-=======
 <!-- footer -->
->>>>>>> Stashed changes
+
 
 </body>
 </html>

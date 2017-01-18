@@ -1,11 +1,13 @@
 /* global + index.html */
 
-html {
+html, body {
 	margin:0 auto;
 	height:100%;
 	width:100%;
 }
-
+* {
+  margin: 0;
+}
 body {
 	display: flex;
   flex-direction: column;
@@ -134,7 +136,9 @@ h6 {
 }
 
 .nav {
-	height:10vh;
+	height:100px;
+	position:fixed;
+	top:0px;
 	justify-content: flex-end;
 	z-index:99999999;
 	order:2;
@@ -167,6 +171,7 @@ nav {
 	margin-top:3vh;
 	margin-right:3vw;
 	opacity: 0.80;
+	cursor:pointer;
 }
 .menu a {
 
@@ -177,8 +182,7 @@ nav {
 .content {
 	z-index:0;
 	order:0;
-	height:84vh;
-	margin-top:-40px;
+	height:100vh;
 	width:100%;
 	display:flex;
 	justify-content: center;
@@ -230,12 +234,21 @@ nav {
 	z-index:2;
 	transition: all 0.1s linear;
 }
-
+.wrap {
+	min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px;
+}
+.wrap:after {
+	content: "";
+  display: block;
+}
+.footer:after {
+		height:100px;
+}
 .footer {
-	height:0vh;
 	width:100%;
-	top:20px;
-	bottom:20px;
+
 	opacity:0.64;
 	color:#fff;
 	text-align:center;
@@ -317,7 +330,11 @@ h6 a {
 	margin:0 auto;
 	text-align:center;
 }
-
+.biography_image {
+	width:250px;
+	height:250px;
+	margin-bottom:32px;
+}
 .bio img {
 	width:271px;
 	height:auto;
@@ -338,8 +355,8 @@ h6 a {
 .thumb img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	max-width:320px;
-	max-height:178px;
+	max-width:510px;
+	max-height:284px;
 	min-width:320px;
 	min-height:178px;
 	height:auto;
@@ -350,6 +367,10 @@ h6 a {
     overflow-x: visible;
     overflow-y: visible;
 		transition: all 0.1s linear;
+}
+iframe {
+	width:510px;
+	height:284px;
 }
 .thumb {
 	padding:3vh;
@@ -394,11 +415,36 @@ h6 a {
 }
 
 .article_thumbs {
-	max-width:320px;
+	width:352px;
 	height:178px;
 	margin: 0 auto;
 }
-
+.thumbs_image {
+	width:352px;
+	height:188px;
+}
+.fade {
+	animation: fade 320ms both;
+}
+.fadeO {
+	animation: fadeO 320ms both;
+}
+@keyframes fade {
+	0% {
+		opacity: 0.72;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeO {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.72;
+	}
+}
 article img.wide {
     max-width: 100%;
     max-height: 100%;
@@ -423,6 +469,9 @@ article img.tall {
 	.article_thumbs {
 		height:232px;
 	}
+	.thumbs {
+		margin-top:40px;
+	}
 	.thumb	{
 		min-height:196px;
 
@@ -438,7 +487,12 @@ article img.tall {
     font-size:12px;
   }
 	.content {
-		padding:12px;
+		padding:20px;
+	}
+	.biography_image {
+		width:200px;
+		height:200px;
+		margin-bottom:24px;
 	}
 	.nav {
 		height:5vh;
@@ -446,9 +500,22 @@ article img.tall {
 	.article_thumbs {
 		height:232px;
 	}
+	.thumb img {
+		max-width:320px;
+		height:auto;
+	}
+	iframe {
+		width:320px;
+		height:180px;
+	}
+	.article_work {
+		height:100px;
+		width:auto;
+	}
 	.thumbs {
 		margin-top:40px;
 	}
+
 	.gn_bottom {
 		margin-bottom:96px;
 	}
@@ -456,6 +523,6 @@ article img.tall {
 		margin-top:96px
 	}
 	.footer {
-		display: block;
+		display: none;
 	}
 }

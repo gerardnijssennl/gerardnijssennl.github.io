@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Gerard Nijssen
 email: info@gerardnijssen.nl
-description: 'Gerard Nijssen started in 1989, after studying History, as a freelance image researcher. He has been working for national and international award-winning productions in film and television for 25 years. Nijssen has also worked for a variety of museums and exhibitions.'
+description: 'Gerard Nijssen started in 1989, after studying History, as a freelance image researcher. He has been working for national and international award-winning productions in film and television for 25 years. Nijssen has also worked for a variety of museums and exhibitions.' #max 272 tekens
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gerardnijssen.nl" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
@@ -27,6 +27,26 @@ homepage_image: 'img/gn_placeholder.png'
 favicon_image: 'img/gn_empty.png'
 excerpt_separator: ""
 year: 2017
+
+collections:
+  work:
+    title: Work
+    output: true
+    permalink: "/:title/"
+
+defaults:
+ scope:
+    path: ''
+    type: work
+  values:
+    author: Gerard Nijssen
+    layout: work
+    title: ''
+    image: ''
+    image_description: ''
+    vimeo: ''
+    copyright_country_year: Gerard Nijssen, Netherlands, 2017
+    work_url: 'http://'
 
 # Build settings
 markdown: kramdown
