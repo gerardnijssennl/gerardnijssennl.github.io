@@ -27,6 +27,7 @@ homepage_image: 'img/gn_placeholder.png'
 favicon_image: 'img/gn_empty.png'
 excerpt_separator: ""
 year: 2017
+paginate: 1
 
 collections:
   work:
