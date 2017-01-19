@@ -1,0 +1,4 @@
+<nav class="nav {% if page.url == '/' %}animated slideInDown{% endif %}">
+	<div class="title"><a href="../">{% if page.url == '/' %}Image Researcher{% else %}{{site.title}}{% endif %}</a></div>
+	<div class="menu"><a href="/menu/" class="homepage">{% if page.url == '/menu/' %} <a onclick="javascript: history.go(-1)" class="close">close</a>{% else %}menu{% endif %}</a></div>
+</nav>

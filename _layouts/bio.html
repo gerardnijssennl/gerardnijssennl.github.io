@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="content">
+	{% if page.biography_image %}
+	<div class="biography_image" style="background-image:url('{{page.biography_image}}');background-size:cover;background-position:center center;-webkit-filter: grayscale(100%);filter: grayscale(100%);">
+	</div>
+	{% endif %}
+	<div class="text playfair no-font-feature">{{page.biography_text}}</div>
+</div>

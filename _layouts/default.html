@@ -1,0 +1,24 @@
+<html>
+{% include header.html %}
+<body class="site">
+
+
+<!-- nav -->
+{% include nav.html %}
+<section class="container wrap animated fadeIn" >
+  {% if page.layout == 'work' %}
+  {% include arrows.html %}
+  {% endif %}
+<!-- content -->
+{{content}}
+</section>
+{% if page.url != '/' and page.layout != 'work' %}
+{% include footer.html %}
+{% endif %}
+
+{% include scripts.html %}
+<!-- footer -->
+
+
+</body>
+</html>
