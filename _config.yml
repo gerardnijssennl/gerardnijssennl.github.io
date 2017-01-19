@@ -34,7 +34,7 @@ collections:
     permalink: "/:title/"
 
 defaults:
-  scope:
+- scope:
     path: ''
     type: work
   values:

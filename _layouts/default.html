@@ -1,13 +1,14 @@
 <html>
 {% include header.html %}
-<body class="site animated fadeIn">
-  {% if page.layout == 'work' %}
-  {% include arrows.html %}
-  {% endif %}
+<body class="site">
+
 
 <!-- nav -->
 {% include nav.html %}
-<section class="container wrap">
+<section class="container wrap animated fadeIn" >
+  {% if page.layout == 'work' %}
+  {% include arrows.html %}
+  {% endif %}
 <!-- content -->
 {{content}}
 </section>
