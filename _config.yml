@@ -40,7 +40,7 @@ telephone_number: 31612345678
 homepage_image: "/img/gn_placeholder.png"
 favicon_image: "/img/gn_empty.png"
 year: 2017
-background_size: 80%
+background_size: cover
 markdown: kramdown
 gems:
 - jekyll-feed
