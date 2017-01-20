@@ -1,4 +1,5 @@
 ---
+title: Bio
 permalink: "/bio/"
 layout: bio
 biography_text: Gerard Nijssen started in 1989, after studying History, as a freelance
