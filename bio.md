@@ -6,6 +6,5 @@ biography_text: Gerard Nijssen started in 1989, after studying History, as a fre
   image researcher. He has been working for national and international award-winning
   productions in film and television for 25 years. Nijssen has also worked for a variety
   of museums and exhibitions.
-biography_image: 
+biography_image:
 ---
-
