@@ -9,10 +9,13 @@
   {% if page.layout == 'work' %}
   {% include arrows.html %}
   {% endif %}
+  {% if page.layout == 'thumbs' %}
+  {% include paginate.html %}
+  {% endif %}
 <!-- content -->
 {{content}}
 </section>
-{% if page.url != '/' and page.layout != 'work' %}
+{% if page.url != '/' and page.layout != 'work' and page.layout != 'thumbs' %}
 {% include footer.html %}
 {% endif %}
 
