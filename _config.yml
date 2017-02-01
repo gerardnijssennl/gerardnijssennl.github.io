@@ -2,6 +2,10 @@
 title: Gerard Nijssen
 timezone: UTC
 collections:
+  discovered:
+    title: Discovered
+    output: true
+    permalink: "/:title/"
   posts:
     title: Posts
     output: true
@@ -15,16 +19,16 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: work
+    type: discovered
   values:
     author: Gerard Nijssen
-    layout: work
+    layout: work-discovered
     title: 
     image: 
     image_description: 
     vimeo: 
-    copyright_country_year: Gerard Nijssen, Netherlands, 2017
-    work_url: http://
+    copyright_country_year: discovered
+    discovered_url: http://
 email: info (at) gerardnijssen.nl
 description: Gerard Nijssen started in 1989, after studying History, as a freelance
   image researcher. He has been working for national and international award-winning
@@ -42,8 +46,11 @@ favicon_image: "/img/gn_empty.png"
 year: 2017
 background_size: cover
 markdown: kramdown
+paginate: 6
+paginate_path: "/thumbs/page:num/"
 gems:
 - jekyll-feed
+- jekyll-paginate
 exclude:
 - Gemfile
 - Gemfile.lock

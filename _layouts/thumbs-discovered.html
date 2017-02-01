@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="content">
+
+<div class="work thumbs">
+
+{% for discovered in site.discovered reversed %}
+  <article class="thumb thumbview article_thumbs" style="padding:1vw;">
+          <a href="{{discovered.url}}">
+            <div class="thumbs_image" style="background-image:url('{{discovered.image}}');background-size:cover;background-position:center center;">
+
+            </div>
+        <!--  <img src="{{work.image}}" alt="{{work.image_description}}" />-->
+          <div class="playfair sub">{{discovered.title}}</div></a>
+    </article>
+    {% endfor %}
+
+
+</div>
+
+</div>

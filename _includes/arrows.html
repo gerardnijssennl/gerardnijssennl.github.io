@@ -1,3 +1,13 @@
 
-<div class="arrow_left ">{{% if page.previous %}}<!-- yes --><a href="{{ page.previous.url }}"><img src="/img/gn_arrow_left.png" height="24px" width="40px" border="0" /></a>{{% endif %}}</div>
-<div class="arrow_right ">{{% if page.next %}}<a href="{{ page.next.url }}"><img src="/img/gn_arrow_right.png" height="24px" width="40px" border="0" /></a>{{% endif %}}</div>
+{% if page.previous.url != nil %}
+<!-- yes -->
+  <div class="arrow_left ">
+    <a href="{{ page.previous.url }}"><img src="/img/gn_arrow_left.png" height="24px" width="40px" border="0" /></a>
+  </div>
+{% endif %}
+
+{% if page.next.url != nil %}
+<div class="arrow_right ">
+  <a href="{{ page.next.url }}"><img src="/img/gn_arrow_right.png" height="24px" width="40px" border="0" /></a>
+</div>
+{% endif %}
