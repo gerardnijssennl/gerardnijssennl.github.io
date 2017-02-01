@@ -12,6 +12,10 @@ collections:
     title: Work
     output: true
     permalink: "/:title/"
+  discovered:
+    title: Discovered
+    output: true
+    permalink: "/:title/"
 defaults:
 - scope:
     path: ''
@@ -19,21 +23,34 @@ defaults:
   values:
     author: Gerard Nijssen
     layout: work
-    title: 
-    image: 
-    image_description: 
-    vimeo: 
+    title:
+    image:
+    image_description:
+    vimeo:
     copyright_country_year: Gerard Nijssen, Netherlands, 2017
     work_url: http://
+defaults:
+- scope:
+    path: ''
+    type: discovered
+  values:
+    author: Gerard Nijssen
+    layout: work-discovered
+    title:
+    image:
+    image_description:
+    vimeo:
+    copyright_country_year: discovered
+    discovered_url: http://
 email: info (at) gerardnijssen.nl
 description: Gerard Nijssen started in 1989, after studying History, as a freelance
   image researcher. He has been working for national and international award-winning
   productions in film and television for 25 years. Nijssen has also worked for a variety
   of museums and exhibitions.
-baseurl: 
+baseurl:
 url: http://gerardnijssen.nl
-twitter_username: 
-facebook_username: 
+twitter_username:
+facebook_username:
 copyright: Amsterdam, Netherlands
 imdb_url: http://www.imdb.com/name/nm3063512/
 telephone_number: 31612345678

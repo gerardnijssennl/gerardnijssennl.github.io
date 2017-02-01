@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="content">
+	<article class="thumb article_work">
+          {% if page.vimeo %} <iframe class="vimeo" src="https://player.vimeo.com/video/{{page.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{% else %}  <img src="{{page.image}}" />{% endif %}
+    </article>
+	<div class="text playfair">{{content}}</div>
+	<h6 class="playfair center" style="margin-top:15px;">{{page.copyright_country_year}} <a href="{{page.discovered_url}}">{{page.discovered_url}}</a></h6>
+</div>
