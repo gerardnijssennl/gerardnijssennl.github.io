@@ -1,11 +1,11 @@
 <html>
 {% include header.html %}
-<body class="site">
+<body class="">
 
 
 <!-- nav -->
 {% include nav.html %}
-<section class="container wrap animated fadeIn" >
+<section class="discovered animated fadeIn" >
   {% if page.layout == 'work' %}
   {% include arrows.html %}
   {% endif %}
@@ -15,7 +15,7 @@
 <!-- content -->
 {{content}}
 </section>
-{% if page.url != '/' and page.layout != 'bio' and page.layout != 'work' and page.layout != 'thumbs' and page.layout != 'work-discovered' and page.layout != 'thumbs-discovered' %}
+{% if page.url != '/' and page.layout != 'work' and page.layout != 'thumbs' and page.layout != 'work-discovered' and page.layout != 'thumbs-discovered' %}
 {% include footer.html %}
 {% endif %}
 
