@@ -201,6 +201,10 @@ nav {
 	 /* ...and now for the proper property */
 	 transition:.3s;
 }
+.discovered_img {
+	width:510px;
+	height:284px;
+}
 .discovered_pad:first-child {
 padding-top:0px;
 }
@@ -213,7 +217,7 @@ padding-top:8vh;
 .content_discovered {
 	z-index:0;
 	order:0;
-	padding-top:16vh;
+	padding-top:100px;
 	width:100%;
 	display:flex;
 	justify-content:  center;
@@ -230,7 +234,7 @@ padding-top:8vh;
 	 transition:.3s;
 }
 .thumbs {
-	padding-top:16vh;
+	padding-top:100px
 }
 .work {
 	z-index:0;
@@ -243,7 +247,7 @@ padding-top:8vh;
 	flex-direction: column;
 	background-position:center center;
 	background-repeat:no-repeat;
-
+	padding-top:100px
 	-ms-transition:.3s;
  -moz-transition:.3s;
  -webkit-transition:.3s;
@@ -507,14 +511,14 @@ article img.tall {
 	}
 	.thumb	{
 		min-height:196px;
-
+		margin-bottom:24px;
 	}
 	.arrow_left img, .arrow_right img {
 		width:60%;
 		height:auto;
 	}
 	.work {
-		padding-top:10vh;
+		padding-top:40px;
 	}
 }
 @media (max-width: 640px) {
@@ -522,7 +526,13 @@ article img.tall {
     font-size:12px;
   }
 	.work {
-		padding-top:10vh;
+		padding-top:40px;
+	}
+	.thumb {
+		margin-bottom:24px;
+	}
+	.thumb:last-child {
+		margin-bottom:40px;
 	}
 	.content {
 		padding:20px;
@@ -541,6 +551,13 @@ article img.tall {
 	.thumb img {
 		max-width:320px;
 		height:auto;
+	}
+	.discovered_img {
+		width:320px;
+		height:180px;
+	}
+	.text {
+
 	}
 	iframe {
 		width:320px;

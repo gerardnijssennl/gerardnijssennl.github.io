@@ -7,12 +7,16 @@ layout: discovered
 	<div class="discovered_pad">
 
 
-	<article class="thumb article_discovered">
-          {% if discovered.vimeo %} <iframe class="vimeo" src="https://player.vimeo.com/video/{{discovered.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> {% elsif discovered.youtube %} <iframe class="vimeo" src="https://www.youtube.com/embed/{{discovered.youtube}}" frameborder="0" allowfullscreen></iframe> {% else %} <img src="{{discovered.image}}" />{% endif %}
-    </article>
-	<div class="text playfair">{{content}}</div>
-	<h6 class="playfair center" style="margin-top:15px;">{{discovered.copyright_country_year}} <a href="{{discovered.discovered_url}}">{{discovered.discovered_url}}</a></h6>
-</div>
+		<article class="thumb article_discovered">
+			{% if discovered.vimeo %}
+			<iframe class="vimeo" src="https://player.vimeo.com/video/{{discovered.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> {% elsif discovered.youtube %}
+			<iframe class="vimeo" src="https://www.youtube.com/embed/{{discovered.youtube}}" frameborder="0" allowfullscreen></iframe> {% else %}
+			<div class="discovered_img" style="background-image:url('{{discovered.image}}');background-size:cover;background-position:center center">
+			</div>{% endif %}
+		</article>
+		<div class="text playfair">{{content}}</div>
+		<h6 class="playfair center" style="margin-top:15px;">{{discovered.copyright_country_year}} <a href="{{discovered.discovered_url}}">{{discovered.discovered_url}}</a></h6>
+	</div>
 
-{% endfor %}
+	{% endfor %}
 </div>
